@@ -1,0 +1,18 @@
+# wan777 스페이스 requirements.txt + patch_wan777.sh 가 덧붙이는 것들.
+# ★ 버전은 서버가 부팅 때 까는 것과 반드시 같아야 한다. 다르면 부팅 때 pip 가
+#   다시 설치하느라 이미지를 쓰는 의미가 없어진다(그래도 동작은 한다).
+# torch / torchvision / torchaudio 는 베이스 이미지(pytorch 2.11.0 cu128)에 이미 있다.
+diffusers==0.38.0
+transformers==4.57.6
+accelerate==1.13.0
+safetensors
+sentencepiece
+peft==0.19.1
+ftfy
+imageio
+imageio-ffmpeg
+opencv-python
+torchao==0.17.0
+gradio==5.44.1
+hf_transfer
+huggingface_hub>=0.26.0
